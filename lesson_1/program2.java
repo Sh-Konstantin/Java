@@ -1,5 +1,6 @@
 package lesson_1;
-public class programm2 {
+
+public class program2 {
     public static void main(String[] args) {
         float f = 123.3456f;
         System.out.println(f);
@@ -10,3 +11,4 @@ public class programm2 {
         return o.getClass().getSimpleName();
     }
 }
+
