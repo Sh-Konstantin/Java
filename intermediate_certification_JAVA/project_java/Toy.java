@@ -1,3 +1,4 @@
+// toy
 package project_java;
 
 public class Toy {
