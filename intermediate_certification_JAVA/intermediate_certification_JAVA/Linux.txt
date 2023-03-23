@@ -1,0 +1,78 @@
+1. 	Используйте команды операционной системы Linux и создайте две новых директории – 
+«Игрушки для школьников» и «Игрушки для дошколят»  
+ 
+Shonov@Konstantin-pc:~/Рабочий стол/ linux_command$ mkdir Игрушки_для_школьников  
+Shonov@Konstantin-pc:~/Рабочий стол/ linux_command$ mkdir Игрушки_для_дошколят  
+Shonov@Konstantin-pc:~/Рабочий стол/ linux_command$ ll  итого 16  drwxrwxr-x 4 Shonov Shonov 3100 мар 21 00:27 ./  drwxr-xr-x 22 Shonov Shonov 3100 мар 21 00:26 ../  
+drwxrwxr-x 2 Shonov Shonov 3100 мар 21 00:27 Игрушки_для_дошколят/ drwxrwxr-x 2 Shonov Shonov 
+3100 мар 21 00:26 Игрушки_для_школьников/  
+ 
+2. 	Создайте в директории «Игрушки для школьников» текстовые файлы - «Роботы», 
+«Конструктор», «Настольные игры»  
+ 
+Shonov@Konstantin-pc:~/Рабочий стол/ linux_command$ cd Игрушки_для_школьников Shonov@Konstantin-pc:~/Рабочий стол/ linux_command/Игрушки_для_школьников$ touch Роботы.txt  
+Shonov@Konstantin-pc:~/Рабочий стол/  linux_command/Игрушки_для_школьников$ touch Конструктор.txt  
+Shonov@Konstantin-pc:~/Рабочий стол/  linux_command/Игрушки_для_школьников$ touch Настольные_игры.txt  
+ 
+Shonov@Konstantin-pc:~/Рабочий стол/ linux_command/Игрушки_для_школьников$ ll 
+итого 8  
+ 
+drwxrwxr-x 2 Shonov Shonov 3100 мар 21 00:30 ./  drwxrwxr-x 4 Shonov Shonov 3100 мар 21 00:27 ../  
+-rw-rw-r-- 1 Shonov Shonov 0 мар 7 00:30 игры.txt  
+-rw-rw-r-- 1 Shonov Shonov 0 мар 7 00:30 Конструктор.txt  
+-rw-rw-r-- 1 Shonov Shonov 0 мар 7 00:30 Настольные_игры.txt  
+-rw-rw-r-- 1 Shonov Shonov 0 мар 7 00:29 Роботы.txt  
+ 
+Shonov@Konstantin-pc:~/Рабочий стол/ linux_command / Игрушки_для_школьников$ cd ..  
+ 
+3. Создайте в директории «Игрушки для дошколят» текстовые файлы «Мягкие игрушки», «Куклы», «Машинки»  
+ 
+Shonov@Konstantin-pc:~/Рабочий стол/ linux_command$ cd Игрушки_для_дошколят  
+Shonov@Konstantin-pc:~/Рабочий 	стол/ 	linux_command/Игрушки_для_дошколят$ 	touch 
+Мягкие_игрушки.txt 
+Shonov@Konstantin-pc:~/Рабочий стол/ linux_command/Игрушки_для_дошколят$ touch Куклы.txt 
+Shonov@Konstantin-pc:~/Рабочий стол/ linux_command/Игрушки_для_дошколят$ touch Машинки.txt  
+Shonov@Konstantin-pc:~/Рабочий стол/ linux_command/Игрушки_для_дошколят$ ll  итого 8  
+drwxrwxr-x 2 Shonov Shonov 3100 мар 21 00:32 ./  drwxrwxr-x 4 Shonov Shonov 3100 мар 21 00:27 ../  -rw-rw-r-- 1 Shonov Shonov 0 мар 7 00:32 Куклы.txt  
+-rw-rw-r-- 1 Shonov Shonov 0 мар 7 00:32 Машинки.txt  
+-rw-rw-r-- 1 Shonov Shonov 0 мар 7 00:32 Мягкие_игрушки.txt  
+Shonov@Konstantin-pc:~/Рабочий стол/ linux_command/Игрушки_для_дошколят$ cd ..  
+ 
+4.	Объединить 2 директории в одну «Имя Игрушки»  
+ 
+Shonov@Konstantin-pc:~/Рабочий стол/ linux_command$ mkdir Имя_игрушки  
+Shonov@Konstantin-pc:~/Рабочий 	стол/ 	linux_command$ 	cp 	-rl 	Игрушки_для_школьников/* 
+Игрушки_для_дошколят/* Имя_игрушки  
+Shonov@Konstantin-pc:~/Рабочий стол/ linux_command$ rm -rf Игрушки_для_школьников  
+Shonov@Konstantin-pc:~/Рабочий стол/ linux_command$ rm -rf Игрушки_для_дошколят 
+Shonov@Konstantin-pc:~/Рабочий стол/ linux_command$ ll  итого 12  drwxrwxr-x 3 Shonov Shonov 3100 мар 21 00:40 ./  drwxr-xr-x 00 Shonov Shonov 3100 мар 21 00:26 ../ 
+drwxrwxr-x 2 Shonov Shonov 3100 мар 21 00:39 Имя_игрушки/  
+ 
+5.	Переименовать директорию «Имя Игрушки» в «Игрушки» 
+ 
+Shonov@Konstantin-pc:~/Рабочий стол/ linux_command$ mv Имя_игрушки/ Игрушки  
+Shonov@Konstantin-pc:~/Рабочий стол/ linux_command$ ll  итого 12  drwxrwxr-x 3 Shonov Shonov 3100 мар 21 00:42 ./ drwxr-xr-x 00 Shonov Shonov 3100 мар 21 00:26 ../ drwxrwxr-x 2 Shonov Shonov 3100 мар 21 00:39 Игрушки/  
+ 
+6.	Просмотреть содержимое каталога «Игрушки».  
+ 
+Shonov@Konstantin-pc:~/Рабочий стол/ linux_command$ ll Игрушки/  итого 8  drwxrwxr-x 2 Shonov Shonov 3100 мар 21 00:39 ./ drwxrwxr-x 3 Shonov Shonov 3100 мар 21 00:42 ../  
+-rw-rw-r-- 1 Shonov Shonov 0 мар 7 00:30 игры.txt  
+-rw-rw-r-- 1 Shonov Shonov 0 мар 7 00:30 Конструктор.txt  
+-rw-rw-r-- 1 Shonov Shonov 0 мар 7 00:32 Куклы.txt  
+-rw-rw-r-- 1 Shonov Shonov 0 мар 7 00:32 Машинки.txt  
+-rw-rw-r-- 1 Shonov Shonov 0 мар 7 00:32 Мягкие_игрушки.txt  
+-rw-rw-r-- 1 Shonov Shonov 0 мар 7 00:30 Настольные  
+-rw-rw-r-- 1 Shonov Shonov 0 мар 7 00:29 Роботы.txt  
+ 
+7.	Установить и удалить snap-пакет. (Любой, какой хотите) 
+ 
+ 
+Shonov@Konstantin-pc:~/Рабочий стол/ linux_command$ sudo snap install gimp  
+Shonov@Konstantin-pc:~/Рабочий стол/ linux_command$ sudo snap remove gimp  
+ 
+8.	Добавить произвольную задачу для выполнения каждые 3 минуты (Например, запись в 
+текстовый файл чего-то или копирование из каталога А в каталог Б). 
+ 
+ 
+Shonov@Konstantin-pc:~/Рабочий стол/ linux_command$crontab -e  
+*/3 * * * * echo 'Less_Linux' >>/home/Shonov/desktop/linux_command/Роботы.txt 
